@@ -25,7 +25,8 @@ $cones = array("sugar"=>"Sugar Cone", "waffle"=>"Waffle Cone", "cup"=>"Cup");
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
     <title>Ice Cream Shoppe</title>
-</head><body>
+</head>
+<body>
 <div class="container">
     <h1>Welcome to my Ice Cream Shoppe!</h1>
     <form action="process.php" method="post">
@@ -40,7 +41,7 @@ $cones = array("sugar"=>"Sugar Cone", "waffle"=>"Waffle Cone", "cup"=>"Cup");
         <h3>Choose One</h3>
         <?php
             foreach ($cones as $value=>$label) {
-                echo "<label><input type='radio' name='cone' value='$value'>". ucfirst($label) ." </label><br>";
+                echo "<label><input type='radio' name='cone' value='$value'> ". ucfirst($label) ." </label><br>";
             }
         ?>
 
